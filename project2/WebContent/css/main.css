@@ -1,0 +1,151 @@
+
+@charset "UTF-8";
+
+<style> /* 폰트 가져오기 */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+</style>
+
+/* 기본설정 */
+* { margin: 0; padding: 0; font-family: Fugaz One; color: #ab906e; }
+
+a.brandcol{
+	font-family: Fugaz One, cursive;
+	color: #ab906e;
+	text-decoration: none;
+	font-size: 25pt;
+}
+a.brandcol:hover{
+	color: #ab906e;
+}
+.form-control:focus,.btn:focus,.navbar-toggler:focus{
+    box-shadow: none;
+    outline: 0;
+}
+
+/* 로고설정 */
+.logo{
+	overflow: hidden;
+	width: 100px;
+	height: 30px;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.logo > img{
+	width: 100%;	
+}
+
+/* 네비바 설정 */
+.navbar{
+	background-color: #f1edea;
+	height: 60px;
+	padding: 0;
+	margin: 0;
+}
+
+footer a,.nav-link{ /* 네비바 링크 설정 */
+	color: #ab906e;
+	transition-timing-function: ease;
+    transition: width 1s;
+}
+
+a.linkcol{/* 네비바 링크 설정 */
+	position: relative;
+	padding-bottom: 0;
+}
+
+.underline:after {/* 네비바 링크 언더라인 설정 */
+	bottom: 0;
+	content: "";
+	height: 1px;
+	left: 50%;
+	position: absolute;
+	background: #4b4b49;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.underline:hover:after { width: 100%; left: 0; }
+footer a:hover,a.linkcol:hover{	color: #4b4b49;}
+footer a:active,a.linkcol:active{color: #4b4b49;transition: 0.3s;}
+.dropdown:hover > .dropdown-menu{display: block;}
+
+/* 메인 캐러셀 설정 */
+.carousel-item{
+	background-color: #f1edea;
+	height: 500px;
+}
+div.clubView1,.imgw, .imgh{
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+}
+div.clubView1>a>img, .imgh>img{
+	position: absolute;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgw>img{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ /* 소모임 설정 */
+.clubView1{	margin: 5px; }
+.mainpart{
+	background-color: #f1edea;
+	border-radius: 20px;
+	height: 300px;
+}
+
+/* 활동순위 설정 */
+#userCircle{
+	display: inline-block;
+	background-color:#e8d3c1;
+	width:100px; height:100px;
+	border-radius:75px;
+	text-align:center;
+	font-size:12px; color:#fff;
+	vertical-align:middle;
+	line-height:100px;
+	float: left;
+}
+
+
+/* 서치버튼 설정 */
+.search{/* 
+	position: relative; */
+	width: 500px;
+	max-width: 500px;
+}
+.search select{
+	max-width: 50%;
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+}
+.search input{
+	margin-left: -1px;
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 0%;
+}
+.search button{
+
+	/* position: absolute;
+	top: 0;
+	right: 0; */
+}
+.btn{
+	background-color: white;
+	border-color: #ced4da;
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 0%;
+}
+.btn:hover,.btn:active{
+	background-color: #f1edea;
+	border-color: #f1edea;
+}
+.form-control:focus,.btn:active{border-color: #ab906e;}

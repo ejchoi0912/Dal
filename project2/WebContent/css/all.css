@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* 폰트 */
+
+/* 로고 */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+/* 한글 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* 영어 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*,h1,h2,h3,h4,h5,h6,p{font-family:Noto Serif KR;}
+.Ubuntu{font-family:Ubuntu ital;}
+.Fugaz{font-family:Fugaz One, cursive;}
+
+
+/* 네비바 색 */
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link{
+  color: #ab896e;
+}
+#mainNav .nav-item .nav-link.js-scroll-trigger.fc1:hover{
+  color: #e9974d;
+}
+.fc1:active,  #mainNav .nav-item .nav-link.js-scroll-trigger.fc1:focus{
+  font-weight: bold;
+  color:#e9974d;
+}
+#mainNav.navbar-shrink {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgb(255,255,255);
+  color: #ab896e;
+}
+#mainNav.navbar-shrink .navbar-brand {
+  font-size: 1.7em; color: #ab896e;
+}
+/* .dropdown:hover > .dropdown-menu{display: block;} */
+
+/* a링크 */
+footer a, a {
+  color: #ab896e;
+  text-decoration: none;
+  background-color: transparent;
+}
+footer a:hover,a:hover {
+  color: #4b4b49;
+  text-decoration: none;
+}
+.left-link:hover, .left-active{
+  border-left: solid #e9974d 3px;
+  font-weight: bold;
+}
+
+
+/* 드래그 색 */
+::selection {
+  background: #A88E7C;
+}
+
+/* 메인버튼 */
+.btn-main{
+  background: #e9974d;
+  color: #fff;
+}
+.btn-main:hover{
+  background: #f2f2f2;
+  color: #e9974d;
+  transition: background-color 0.3s linear;
+}
+
+/* 검색 */
+.btn-search{
+  background: #f2f2f2;
+  color:  #e9974d;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: relative;
+  margin-left: -1px;
+}
+.btn-search:hover{
+  background: #e9974d;
+  color: #f2f2f2;
+}
+input.search{
+  border-radius: 0;
+  width: 100%;
+  color: #666;
+  border: 1px solid #E8E8E8;
+}
+.input-group input.search:focus{
+  outline: 0.5 #e9974d;
+}
+.form-control{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #E8E8E8;
+}
+.btn:focus, .btn:active,
+textarea:focus, #chat textarea:active{
+  outline: 0;
+  box-shadow: 0 0 0 0 0;
+}
+
+/* 소제목 */
+.Sheader{
+   margin-bottom: 40px;
+   height:80px;
+   border-left: 4px solid #e8974c;
+   padding-left: 10px;
+   margin-bottom: 50px;
+}
+.Sheader  a{ text-decoration: none;}
+.Sheader a h2{
+   color: #4b4b49;   
+   font-size: 20pt;
+   font-weight: 700;
+}
+.Sheader p{
+   margin-top:5px;
+   color: #4b4b49;   
+   font-size: 11pt;
+   font-weight: 400;
+   font-style: italic;
+}
+
+
+/* 페이지번호 */
+.btn-page{
+  background-color: #e8d3c1;
+  color: #f1edea;
+  border: 1px solid #f1edea;
+  border-radius:10%;
+  padding-top: 3px;
+}
+.btn-page:hover,.btn-page:active,.btn-page:focus{
+  background-color: #f1edea;
+  border-color: #f1edea;
+  color:#4b4b49;
+  outline: none;
+}
+.form-control:focus,.btn:active{border-color: #ab906e;}
+

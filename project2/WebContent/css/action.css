@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+
+/*애니메이션 속도조절*/
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 700ms;
+  --animate-delay: 700ms;
+}

@@ -1,0 +1,47 @@
+
+a, a:hover, a:visited, a:active{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #a00;
+}
+
+/* 레이아웃 외곽 너비 400px 제한*/
+
+.rating .rate_radio {
+	
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 30px;
+    height: 30px;
+    background-color: #yellow;
+    cursor: pointer;
+    vertical-align: top;
+    display: none;
+}
+.rating .rate_radio + label {
+    position: relative;
+    display: block;
+    float: left;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/#ab896e_star.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+.rating .ratefill {
+    background-color: #e8d3c1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.cmd{
+    margin-top: 60px;
+    text-align: right;
+}

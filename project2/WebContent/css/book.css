@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+<style> /* 폰트 가져오기 */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+/*font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+</style>
+
+/* header */
+.Sheader{
+   margin-bottom: 40px;
+   height:80px;
+   border-left: 4px solid #e8974c;
+   padding-left: 10px;
+   margin-bottom: 50px;
+}
+.container .Sheader > a{
+   text-decoration: none;
+   
+}
+
+.container .Sheader > a> h2{
+   
+   color: #4b4b49;   
+   font-size: 20pt;
+   font-weight: 700;
+}
+
+.container .Sheader > p{
+   margin-top:5px;
+   color: #4b4b49;   
+   font-size: 11pt;
+   font-weight: 400;
+   font-style: italic;
+}
+/* book 설정*/
+
+
+.service img{
+   /* box-shadow: 0px 10px 30px 5px rgb(0 0 0 / 15%); */
+   background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.service a{
+   box-shadow: 0px 10px 30px 5px rgb(0 0 0 / 15%);
+   height:230px;
+
+   
+}
+
+.detail{
+   padding-top: 100px;
+}
+
+
+.category_ul{
+    list-style: none;
+     padding:0;
+     margin:0;
+    width: 100%;
+}
+
+.category a{
+   display: block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+} 
+
+.form-control.select{
+   width: 30px;
+}
+
+
+
+/* 서치버튼 설정 */
+.search{
+   padding:0;
+     margin:0;
+     /*font-size: 7pt;*/
+}
+
+.search select{
+   max-width: 35%;
+   font-size: 10pt;
+   border-top-right-radius: 0%;
+   border-bottom-right-radius: 0%;
+   outline: none;
+}
+.search input{
+   margin-left: -1px;
+   font-size: 10pt;
+   border-top-left-radius: 0%;
+   border-bottom-left-radius: 0%;
+   outline: none;
+}
+
+
+.btn{
+   background-color: #e8d3c1;
+   color: #f1edea;
+   border: 1px solid #f1edea;
+   border-radius:10%;
+   padding-top: 3px;
+
+}
+
+.col input{
+   background-color: #e8d3c1;
+   border-color: #ced4da;
+   color: white;
+
+   border-radius:0%;
+   
+}
+.btn:hover,.btn:active{
+   background-color: #f1edea;
+   border-color: #f1edea;
+   color:#4b4b49;
+}
+.form-control:focus,.btn:active{border-color: #ab906e;}
+
+
+/*책 hover */
+
+
+::-webkit-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
+::-moz-selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+::selection {
+  color: $brand-white;
+  background: $brand-primary;
+}
+
+.bookimage{
+   width: 160px;
+   height: 240px;   
+   
+}
+
+.gtco-container {
+  max-width: 1140px;
+  position: relative;
+  float:none;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gtco-section {
+
+   margin-top: 20px;
+}
+
+.gtco-products .one-row, .gtco-products .two-row {
+  width: 100%;
+  position:relative;
+  overflow: hidden;
+  height: 240px;
+  width: 160px;   
+ margin:25px 20px;
+  display: block;
+
+}
+
+.gtco-products .two-row {
+  height: 240px;
+   width: 160px;   
+}
+.gtco-products .one-row {
+  height: 230px;
+}
+.gtco-products .gtco-item {
+  position: relative;
+}
+.gtco-products .gtco-item .overlay {
+  position: absolute;
+  height:100%;
+  width:100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gtco-products .gtco-item .overlay .copy {
+  bottom: 30px;
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.gtco-products .gtco-item .overlay .copy h3 {
+  color: #4b4b49;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.gtco-products .gtco-item .overlay .copy p {
+  color: rgb(75, 75, 75, 0.7);
+  padding: 0;
+  font-size: 14px;
+}
+.gtco-products .gtco-item .overlay .copy p:last-child {
+  margin-bottom: 0;
+}
+.gtco-products .gtco-item .overlay:before {
+  z-index: 7;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .8; 
+  background: #fff;
+  background: -moz-linear-gradient(left, #fff 0%, #fff 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #fff), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(left, #fff 0%, #fff fff%);
+  background: -o-linear-gradient(left, #fff 0%, #fff 100%);
+  background: -ms-linear-gradient(left, #fff 0%, #fff 100%);
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff', GradientType=1 );
+}
+.gtco-products .gtco-item:hover .overlay {
+  opacity: 7;
+  visibility: visible;
+}
+.gtco-products .gtco-item:hover .overlay .copy {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.bg-img {
+   /* position:relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+
+/* 페이징 여백 */
+.paging div{
+   margin-top: 30px; 
+   /* margin-bottom: 30px; */
+   
+}
+
+.left-link:hover, .left-active{
+  border-left: solid #e9974d 3px;
+  font-weight: bold;
+}

@@ -1,0 +1,176 @@
+*{
+   magin:0 auto;
+   padding: auto;
+}
+
+.wishlist { /* 책 위시리스트 파트 */
+	/* height: ; */
+	/* background-color : #e8d3c1; */
+    color: #ab896e;
+    text-align: left;
+    padding:20px;
+
+   
+}
+
+.member{ /* 회원정보 파트*/
+    height: 400px;
+    margin: 10px auto 0;
+    text-align: center;
+   /*  color: #ab896e; */
+}
+
+.booksearch{ /* 책검색 파트*/
+   height: 400px;
+   
+    text-align: center;
+    color: #ab896e;
+}
+
+
+.clublist{ /* 소모임 파트 */
+
+	margin-left:40px;
+   height: 450px;
+    color: #ab896e;
+    border-radius: 10%;
+}
+
+.wishAndsearch{
+   magin:0; padding:10px;
+
+}
+
+.memAndclub{
+   magin:0; padding:0;
+}
+
+
+.bookWishtable {
+   	width: 450px;
+	box-shadow: 0px 10px 30px 5px rgb(0 0 0 / 15%);
+ 	border-bottom:2px solid #e8974c; 
+ 	border-top:2px solid #e8974c;
+
+}
+
+.bookReadtable {
+   	width: 450px;
+	 box-shadow: 0px 10px 30px 5px rgb(0 0 0 / 15%);
+ 	border-bottom:2px solid #ab896e; 
+ 	border-top:2px solid #ab896e;
+}
+
+
+.wishbooksize { /* 위시리스트 북 이미지 사이즈 */
+   height: 150px;
+}
+
+.pagingarea{ /* 위시리스트 페이징 숫자 (동그라미) 공간 */
+   height: 30px;
+}
+
+
+
+.booktd { /* 찾은 책 검색 결과 테이블 td */
+	padding: 20px 20px 0px 20px;
+   height:160px;
+
+   z-index: 100;
+}
+
+
+.profiletable{ /* 개인정보 테이블 */
+   /* border: 1px solid black; */
+   width: 100%
+}
+
+.clublisttable{ /* 클럽리스트 테이블 */
+	font-size : 10pt;
+	FONT-WEIGHT: 800;
+	width:300px;
+	height:500px;
+ /*   border: 1px solid #E8D3C1;   */
+   box-shadow: 0px 10px 30px 5px rgb(0 0 0 / 15%);
+	
+}
+
+.clubImageTd{   /* 클럽리스트 표 td */
+ /*   height: 80px; */
+   /* text-align: center; */
+   color: #4b4b49;
+   
+   
+   
+}
+
+.memAndclub{
+   /* float:left; */
+}
+
+
+.searchpagingarea {
+	height:60px;
+   margin: 30px auto;
+  
+  
+}
+
+.bookshelftd{
+	background-image: url("./img/shelf.png");
+	background-repeat: no-repeat;
+	position: relative;
+	filter: brightness(98%);
+	bottom: 8px;
+	z-index: 1;
+}
+
+.booktd img { 
+	margin-top:5px;
+	display: block; 
+	margin: 0px auto;
+	 box-shadow: 0px 10px 30px 5px rgb(0 0 0 / 15%);
+	  }
+
+.clublist img { display:inline; margin: 0; }
+
+tr.clubImageTd:hover { /* background-color: #f1edea; */ }
+
+
+.searchlala{
+	height: 60px;
+}
+
+.searchlulu{
+	height: 30px;
+}
+
+
+.btn-search{
+  background: #f2f2f2;
+  color: #696969;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: relative;
+  margin-left: -1px;
+}
+.btn-search:hover{
+  background: #e9974d;
+  color: #fff;
+  transition: background-color 0.3s linear;
+}
+input.search{
+  border-radius: 0;
+  width: 100%;
+  color: #666;
+  border: 1px solid #E8E8E8;
+}
+.input-group input.search:focus{
+  outline: 0.5 #e9974d;
+}
+.form-control{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #E8E8E8;
+}
+
