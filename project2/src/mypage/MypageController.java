@@ -33,7 +33,7 @@ public class MypageController extends HttpServlet{
    public void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
       DBConnection.initConnection();
       req.setCharacterEncoding("utf-8");
-      System.out.println("MypageController doProcess");
+      System.out.println("MypageController doProcess222222");
       
       String param = req.getParameter("param");
       System.out.println("param"+param);
