@@ -39,8 +39,19 @@ public class MypageController extends HttpServlet{
       System.out.println("param"+param);
       
       
-        if(param.equals("getmypagelist")) {
+        if(param.equals("getmypagelist22222")) {
          System.out.println("getwishlist controller");
+      
+         //회원정보를 보내주기
+         int membernum = (Integer.parseInt(req.getParameter("membernum")));
+         System.out.println("getwishlist controller membernum= "+membernum);
+         
+         MypageDao dao = MypageDao.getInstance();
+         
+         MemberDto memberdto = dao.getMyInfo(membernum);
+         req.setAttribute("memberdto", memberdto);
+         req.setAttribute("membernum", membernum+"");
+         
          
          //위시리스트와 읽은책리스트를 보내주기
           String choice = req.getParameter("choice");
