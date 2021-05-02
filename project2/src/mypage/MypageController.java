@@ -38,8 +38,7 @@ public class MypageController extends HttpServlet{
       String param = req.getParameter("param");
       System.out.println("param"+param);
       
-      
-        if(param.equals("getmypagelist22222")) {
+      if(param.equals("getmypagelist")) {
          System.out.println("getwishlist controller");
       
          //회원정보를 보내주기
